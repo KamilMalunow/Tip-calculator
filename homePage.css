@@ -1,0 +1,136 @@
+html{
+    padding: 0;
+    margin: 0;
+    background: #86bbd8;
+}
+
+.container{
+    margin: auto;
+    max-width: 800px;
+    margin-top: 200px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    min-width: 100%;
+    background-color: #336699; 
+}
+
+.header > h1{
+    margin: auto;
+    color: #ffffff;
+    display: flex;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+ .main{
+    background-color: #ffffff;
+    padding:20px;
+ }
+
+ .text-tranform{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.3rem;
+ }
+
+ .main-prize__bill,.main-people__bill{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-width: 100%;
+ }
+
+ .main-prize__bill > span{
+    font-size: 1.5rem;
+    background-color:  #336699;
+    padding: .8rem;
+    color: #ffffff;
+    z-index: 2;
+ }
+
+ .main-prize__bill > .billPrize, .main-people__bill > .billPeople {
+    border: 1px solid grey;
+    padding:10px;
+    font-size: 1.4rem;
+ }
+
+ .main-prize__bill > .billPrize:focus, .main-people__bill > .billPeople:focus,  .serviceQuality:focus{
+   transition: 0.3s;
+    box-shadow: 0px 0px 19px 0px rgba(50, 60, 183, 1);
+    outline: none;
+ }
+
+
+
+ .main-people__bill > span{
+    background-color:  #336699;
+    padding: .5rem;
+    display:flex;
+    align-items: center;
+ }
+
+ .serviceQuality{
+    min-width: 100%;
+    padding:10px;
+    font-size: 1.4rem;
+ }
+
+
+ .button{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+ }
+.submitButton{
+    color: #ffffff;
+    background-color: #336699;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    min-width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.submitButton:hover{
+    background-color: #86bbd8;
+    color: #000;
+    transition: 0.3s;
+}
+
+
+.wynik{
+   min-width: 100%;
+   font-size: 1.4rem;
+   margin-top: 10px;
+   text-align: center;
+}
+
+.loader{
+   pointer-events: none;
+   background-color: transparent;
+   width:50px;
+   height: 50px;
+   border-radius: 50%;
+   border: 5px solid transparent;
+   border-top-color: black;
+   animation: an1 1s ease infinite;
+}
+
+@keyframes an1 {
+   0%{
+      transform: rotate(0turn);
+   }
+   100%{
+      transform: rotate(1turn);
+   }
+}

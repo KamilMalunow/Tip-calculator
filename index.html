@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="homePage.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>tip calculator</h1>
+            </div>
+
+            <div class="main">
+                <form class="form">
+                    <p class="text-tranform">how much was your bill ?</p>
+                    
+                    <div class="main-prize__bill">
+                        <span>$</span>
+                        <input type="number" class="billPrize">
+                    </div>
+
+                    <p class="text-tranform">how many people sharing the bill ?</p>
+                    <div class="main-people__bill">
+                        <span>&#128100;</span>
+                        <input type="number" class="billPeople">
+                    </div>
+
+                    <p class="text-tranform">how was your service</p>
+                    <div class="main_service--quality">
+                        <select name="serviceQuality" class="serviceQuality">
+                            <option selected value="0">Choose...</option>
+                            <option value="20">Great - 20%</option>
+                            <option value="10">Great - 10%</option>
+                            <option value="2">Great - 2%</option>
+                        </select>
+                    </div>
+                    <div class="button">
+                        <button class="submitButton">Calculate
+                            
+                        </button>
+                        
+                    </div>
+                    <div class="wynik"></div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
